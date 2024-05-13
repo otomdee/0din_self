@@ -4,9 +4,25 @@
         <meta charset="UTF-8">
         <title>Page Title</title>
         <script>
-            const words = "my string";
-            let lines = words.at(4)
-            console.log(lines);
+            let login = prompt("enter login");
+            if (login == "Admin") {
+                let password = prompt("enter password");
+                if (password == "TheMaster") {
+                    alert("Welcome!");
+                }
+                else if (password == "" || password == null) {
+                    alert("Cancelled");
+                }
+                else {
+                    alert("Wrong Password");
+                }
+            }
+            else if (login == "" || login == null) {
+                alert("Cancelled!");
+            }
+            else {
+                alert("I don't know you");
+            }
         </script>
     </head>
     <body>
